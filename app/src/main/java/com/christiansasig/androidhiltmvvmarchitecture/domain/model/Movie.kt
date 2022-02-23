@@ -1,6 +1,5 @@
 package com.christiansasig.androidhiltmvvmarchitecture.domain.model
 
-import androidx.room.ColumnInfo
 import com.christiansasig.androidhiltmvvmarchitecture.data.database.entities.MovieEntity
 import com.christiansasig.androidhiltmvvmarchitecture.data.model.MovieModel
 

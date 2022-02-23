@@ -7,9 +7,6 @@ import retrofit2.http.GET
 import retrofit2.http.Query
 
 interface MovieApiClient {
-    @GET("/.json")
-    suspend fun getAllQuotes(): Response<List<MovieModel>>
-
     @GET("discover/movie")
     suspend fun getMovies(@Query("page") page: Int,
                           @Query("sort_by") sort_by: String): Response<Data>

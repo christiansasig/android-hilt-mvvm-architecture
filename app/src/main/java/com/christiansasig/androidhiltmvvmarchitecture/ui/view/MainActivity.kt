@@ -6,6 +6,7 @@ import androidx.activity.viewModels
 import androidx.core.view.isVisible
 import androidx.lifecycle.Observer
 import com.christiansasig.androidhiltmvvmarchitecture.databinding.ActivityMainBinding
+import com.christiansasig.androidhiltmvvmarchitecture.ui.adapter.MovieAdapter
 import com.christiansasig.androidhiltmvvmarchitecture.ui.viewmodel.MovieViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -24,8 +25,7 @@ class MainActivity : AppCompatActivity() {
         movieViewModel.onCreate()
 
         movieViewModel.movieModel.observe(this, Observer {
-            binding.tvQuote.text = it.title
-            binding.tvAuthor.text = it.backdropPath
+            binding.movies.adapter = MovieAdapter(this, it)
         })
         movieViewModel.isLoading.observe(this, Observer {
             binding.loading.isVisible = it

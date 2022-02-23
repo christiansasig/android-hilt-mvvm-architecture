@@ -14,9 +14,9 @@ class MovieService @Inject constructor(private val api: MovieApiClient) {
                 val response = api.getMovies(page, sortBy)
                 response.body()?.results ?: emptyList()
             }catch (e:Exception){
+                e.printStackTrace()
                 emptyList()
             }
-
         }
     }
 

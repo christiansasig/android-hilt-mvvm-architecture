@@ -16,7 +16,7 @@ class MovieViewModel @Inject constructor(
     private val getRandomMovieUseCase: GetRandomMovieUseCase
 ) : ViewModel() {
 
-    val movieModel = MutableLiveData<Movie>()
+    val movieModel = MutableLiveData<List<Movie>>()
     val isLoading = MutableLiveData<Boolean>()
 
     fun onCreate() {
@@ -25,7 +25,7 @@ class MovieViewModel @Inject constructor(
             val result = getMoviesUseCase()
 
             if (!result.isNullOrEmpty()) {
-                movieModel.postValue(result[0])
+                movieModel.postValue(result)
                 isLoading.postValue(false)
             }
         }
@@ -36,7 +36,7 @@ class MovieViewModel @Inject constructor(
             isLoading.postValue(true)
             val quote = getRandomMovieUseCase()
             if (quote != null) {
-                movieModel.postValue(quote)
+                //movieModel.postValue(quote)
             }
             isLoading.postValue(false)
         }
