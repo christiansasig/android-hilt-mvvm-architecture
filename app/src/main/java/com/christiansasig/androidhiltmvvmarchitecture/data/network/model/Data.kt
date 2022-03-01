@@ -1,4 +1,4 @@
-package com.christiansasig.androidhiltmvvmarchitecture.data.model
+package com.christiansasig.androidhiltmvvmarchitecture.data.network.model
 
 import com.google.gson.annotations.SerializedName
 

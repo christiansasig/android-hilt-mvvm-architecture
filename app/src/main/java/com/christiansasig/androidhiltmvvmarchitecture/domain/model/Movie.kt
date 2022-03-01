@@ -1,7 +1,7 @@
 package com.christiansasig.androidhiltmvvmarchitecture.domain.model
 
 import com.christiansasig.androidhiltmvvmarchitecture.data.database.entities.MovieEntity
-import com.christiansasig.androidhiltmvvmarchitecture.data.model.MovieModel
+import com.christiansasig.androidhiltmvvmarchitecture.data.network.model.MovieModel
 
 data class Movie (
 val title: String?,

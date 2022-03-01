@@ -1,6 +1,6 @@
 package com.christiansasig.androidhiltmvvmarchitecture.data.network
 
-import com.christiansasig.androidhiltmvvmarchitecture.data.model.MovieModel
+import com.christiansasig.androidhiltmvvmarchitecture.data.network.model.MovieModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import java.lang.Exception

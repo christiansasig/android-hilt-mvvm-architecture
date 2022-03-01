@@ -2,7 +2,7 @@ package com.christiansasig.androidhiltmvvmarchitecture.data
 
 import com.christiansasig.androidhiltmvvmarchitecture.data.database.dao.MovieDao
 import com.christiansasig.androidhiltmvvmarchitecture.data.database.entities.MovieEntity
-import com.christiansasig.androidhiltmvvmarchitecture.data.model.MovieModel
+import com.christiansasig.androidhiltmvvmarchitecture.data.network.model.MovieModel
 import com.christiansasig.androidhiltmvvmarchitecture.domain.model.Movie
 import com.christiansasig.androidhiltmvvmarchitecture.domain.model.toDomain
 import com.christiansasig.androidhiltmvvmarchitecture.data.network.MovieService

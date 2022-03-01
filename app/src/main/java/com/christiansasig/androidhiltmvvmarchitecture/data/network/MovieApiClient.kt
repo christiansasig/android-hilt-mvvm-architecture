@@ -1,7 +1,6 @@
 package com.christiansasig.androidhiltmvvmarchitecture.data.network
 
-import com.christiansasig.androidhiltmvvmarchitecture.data.model.Data
-import com.christiansasig.androidhiltmvvmarchitecture.data.model.MovieModel
+import com.christiansasig.androidhiltmvvmarchitecture.data.network.model.Data
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Query
