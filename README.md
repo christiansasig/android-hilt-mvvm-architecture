@@ -4,5 +4,5 @@ This is an application for sample with MVVM Architecture, Retrofit, Coroutines, 
 To test this project, you can need apikey in https://api.themoviedb.org/3/.
 Enter the apikey variable in the "local.properties" file
 For example: apiKey=XXXXXXXXXX
-![ScreenShot](/screenshots/screenshot_1.png)
+![ScreenShot](/screenshots/screenshot_1.jpg)
 Developed by: Christian Sasig, email: christiansasig@gmail.com
