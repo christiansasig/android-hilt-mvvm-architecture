@@ -24,6 +24,11 @@ class MovieRepository @Inject constructor(
         return response.map { it.toDomain() }
     }
 
+    suspend fun getMovieFromDatabaseById(id: Int):Movie{
+        val response: MovieEntity = movieDao.getById(id)
+        return response.toDomain()
+    }
+
     suspend fun insertMovies(entities:List<MovieEntity>){
         movieDao.insertAll(entities)
     }

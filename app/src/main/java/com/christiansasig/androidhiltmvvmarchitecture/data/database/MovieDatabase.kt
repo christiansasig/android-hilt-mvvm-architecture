@@ -5,7 +5,7 @@ import androidx.room.RoomDatabase
 import com.christiansasig.androidhiltmvvmarchitecture.data.database.dao.MovieDao
 import com.christiansasig.androidhiltmvvmarchitecture.data.database.entities.MovieEntity
 
-@Database(entities = [MovieEntity::class], version = 1)
+@Database(entities = [MovieEntity::class], version = 2)
 abstract class MovieDatabase: RoomDatabase() {
 
     abstract fun getMovieDao(): MovieDao

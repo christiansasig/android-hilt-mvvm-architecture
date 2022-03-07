@@ -4,7 +4,8 @@ import com.christiansasig.androidhiltmvvmarchitecture.data.database.entities.Mov
 import com.christiansasig.androidhiltmvvmarchitecture.data.network.model.MovieModel
 
 data class Movie (
-val title: String?,
+    val id: Int,
+val title: String,
 val posterPath: String?,
 val voteAverage: Float?,
 val backdropPath: String?,
@@ -15,5 +16,5 @@ val popularity: Float?
 )
 
 //extension function/Funcion de extension
-fun MovieModel.toDomain() = Movie(title, posterPath, voteAverage, backdropPath, overview, releaseDate, originalTitle, popularity)
-fun MovieEntity.toDomain() = Movie(title, posterPath, voteAverage,backdropPath, overview, releaseDate, originalTitle, popularity)
+fun MovieModel.toDomain() = Movie(id, title, posterPath, voteAverage, backdropPath, overview, releaseDate, originalTitle, popularity)
+fun MovieEntity.toDomain() = Movie(id, title, posterPath, voteAverage,backdropPath, overview, releaseDate, originalTitle, popularity)

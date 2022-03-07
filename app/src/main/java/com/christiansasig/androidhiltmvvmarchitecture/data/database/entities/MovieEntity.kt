@@ -9,7 +9,7 @@ import com.christiansasig.androidhiltmvvmarchitecture.domain.model.Movie
 data class MovieEntity(
     @PrimaryKey(autoGenerate = true)
 @ColumnInfo(name = "id") val id: Int = 0,
-@ColumnInfo(name = "title") val title: String?,
+@ColumnInfo(name = "title") val title: String,
 @ColumnInfo(name = "poster_path") val posterPath: String?,
 @ColumnInfo(name = "vote_average") val voteAverage: Float?,
 @ColumnInfo(name = "backdrop_path") val backdropPath: String?,
